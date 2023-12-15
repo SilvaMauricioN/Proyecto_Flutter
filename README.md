@@ -6,25 +6,26 @@ Esta es una aplicación del Museo Rijks desarrollada en Flutter. La aplicación 
 
 ## Características Principales
 
-![Pantalla Inicio](assets/appImages/Inicio.png)
 
 - **Pantalla de Inicio:** Botón para iniciar la navegación.
+![Pantalla Inicio](assets/appImages/Inicio.png){width=250px height=150px}
 
-![Pantalla Galeria](assets/appImages/PantallaGaleria.png)
 
 - **Galería de Obras:** Muestra una colección de obras de arte. Permite hacer clic en una obra para ver a pantalla completa. Ademas de permitir hacer click en el nombre de la obra y direccionarte a la pantalla Obra, para ver detalles especificos de las misma.
+![Pantalla Galeria](assets/appImages/PantallaGaleria.png)
 
+
+- **Buscador de Artistas:** Permite buscar y filtrar artistas, Permite cliclear en un artista y direccionarte a la pantalla Galeria de Artista.
 ![Pantalla Buscador](assets/appImages/PantallaBuscador.png)
 
-- **Buscador de Artistas:** Permite buscar y filtrar artistas, Permite cliclear en un artista y direccionarte a la pantalla Galeria de Artista .
 
+- **Galería por Artista:** Muestra una galería de las principales obras de un artista seleccionado. Tambien permite hacer click en el nombre de la obra y direccionarte a la pantalla Obra.
 ![Pantalla Obras Artistas](assets/appImages/PantallaObrasArtistas.png)
 
-- **Galería por Artista:** Muestra una galería de las principales obras de un artista seleccionado. Tambien permite hacer click en el nombre de la obra y direccionarte a la pantalla Obra
-
-![Pantalla Obra](assets/appImages/PantallaObra.png)
 
 - **Detalles de una Obra:** Proporciona información detallada sobre una obra de arte, incluyendo imágenes, títulos y detalles técnicos.
+![Pantalla Obra](assets/appImages/PantallaObra.png)
+
 
 ## Configuración y Dependencias
 
