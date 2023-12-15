@@ -28,7 +28,7 @@ class GaleriaCard extends StatelessWidget {
         children: <Widget>[
           url.isNotEmpty ?
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.20,
+            height: MediaQuery.of(context).size.height * 0.23,
             child: FadeInImage(
               placeholder:const  AssetImage('assets/images/loading.gif'),
               image: NetworkImage(url),
@@ -46,11 +46,7 @@ class GaleriaCard extends StatelessWidget {
                     handler.numeroObjeto = objectNumber;
                     handler.paginaActual = 3;
                   },
-                  child: Text(titulo, 
-                    style:const  TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold
-                    ),
+                  child: Text(titulo,                   
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                   ),

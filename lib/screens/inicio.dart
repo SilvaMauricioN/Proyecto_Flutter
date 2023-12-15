@@ -51,7 +51,7 @@ class __InicioState extends State<Inicio> {
           Navigator.pushNamed(context, 'Navegacion');
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.amber[900],
+          //backgroundColor: Colors.amber[900],
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           elevation: 20.0,

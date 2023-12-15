@@ -23,12 +23,9 @@ class _NavegacionBar extends State<Navegacion> {
     return Scaffold(
       drawer: const DrawerMenu(),
       appBar: AppBar(
-        backgroundColor: Colors.grey[850],
         title: const Text(
           'Museo Risjk',
-          style: TextStyle(color: Colors.white),
         ),
-        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Center(
         child: _widgetOptions.elementAt(page.paginaActual),
@@ -37,37 +34,31 @@ class _NavegacionBar extends State<Navegacion> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.grey),
-            activeIcon: Icon(Icons.home, color: Colors.white),
+            icon: Icon(Icons.home,),
+            activeIcon: Icon(Icons.home,),
             label: 'Galeria',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search, color: Colors.grey),
-            activeIcon: Icon(Icons.search, color: Colors.white),
+            icon: Icon(Icons.search,),
+            activeIcon: Icon(Icons.search,),
             label: 'Explorar',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person, color: Colors.grey),
-            activeIcon: Icon(Icons.person, color: Colors.white),
+            icon: Icon(Icons.person,),
+            activeIcon: Icon(Icons.person,),
             label: 'Artista',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.image, color: Colors.grey),
-            activeIcon: Icon(Icons.image, color: Colors.white),
+            icon: Icon(Icons.image,),
+            activeIcon: Icon(Icons.image,),
             label: 'Cuadro',
           ),
         ],
         currentIndex: page.paginaActual,
-        selectedItemColor: Colors.white,
         onTap: (value){
           page.paginaActual = value;
         },
-        // (value) => _onItemTapped(value),
-        elevation: 0,
         iconSize: 20,
-        backgroundColor: Colors.grey[850],
-        unselectedItemColor: Colors.grey,
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

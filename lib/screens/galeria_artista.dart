@@ -28,18 +28,15 @@ class GaleriaArtista extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(9.0),
                     child: Text(
-                      'ARTISTA',
-                      style: TextStyle(
-                          fontSize: 17, fontWeight: FontWeight.bold),
+                      'ARTISTA',                     
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(9.0),
                       child: Text(
-                          artista,
-                          style: const TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold)),
+                          artista,                        
+                        ),
                     ),
                   ),
                 ],

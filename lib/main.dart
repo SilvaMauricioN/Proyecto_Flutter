@@ -6,6 +6,8 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (context) => PaginaHandler()),
         ChangeNotifierProvider(create: (context) => MuseumService()),
+        ChangeNotifierProvider<ThemeProvider>(create: (_) => ThemeProvider(isDarkMode: false)),         
+
       ],
       child:const MyApp(),
     )
@@ -20,9 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Demo App Museo',
-      theme: ThemeData(        
-        useMaterial3: true,
-      ),
+      theme: Provider.of<ThemeProvider>(context,listen:true).temaActual,   
       initialRoute: 'Inicio',
       routes: {
         'Inicio':(context) => const Inicio(),

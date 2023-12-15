@@ -58,7 +58,7 @@ class _BuscadorState extends State<Buscador> {
             const Padding(
               padding: EdgeInsets.all(9.0),
               child: Text('ARTISTAS',
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+                  ),
             ),
             buscadorWidget(),
           ],
@@ -108,12 +108,7 @@ class _BuscadorState extends State<Buscador> {
           decoration: const InputDecoration(
               labelText: "Buscar",
               hintText: "Buscar",
-              prefixIcon: Icon(Icons.search),
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(25.0))),
-              focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(25.0)),
-                  borderSide: BorderSide(color: Colors.orange))),
+              prefixIcon: Icon(Icons.search,color: Colors.black,),),             
           enabled: !isLoading,
         ),
       ),

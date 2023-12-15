@@ -17,7 +17,7 @@ class TarjetaArtista extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.cyan[800],
         borderRadius: BorderRadius.circular(10),
         boxShadow: const [
           BoxShadow(
@@ -48,7 +48,6 @@ class TarjetaArtista extends StatelessWidget {
               margin: const EdgeInsets.all(5),
               child: Text(
                 limitarTexto(nombre),
-                style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                 overflow: TextOverflow.ellipsis,
               ),
             ),

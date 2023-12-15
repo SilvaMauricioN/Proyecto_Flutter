@@ -1,9 +1,11 @@
 //Paquete de flutter
 export 'package:flutter/material.dart';
+export 'dart:io';
 
 //Paquete provider
 export 'package:app_demo/providers/museo_service.dart';
 export 'package:app_demo/providers/pagina_handler.dart';
+export 'package:app_demo/providers/theme_provider.dart';
 export 'package:provider/provider.dart';
 
 //Paquete widgets
@@ -29,3 +31,5 @@ export 'package:app_demo/models/obra_simple.dart';
 export 'package:app_demo/models/obra_detalle.dart';
 export 'package:app_demo/models/artista_simple.dart';
 
+//paquete temas
+export 'package:app_demo/theme/theme.dart';

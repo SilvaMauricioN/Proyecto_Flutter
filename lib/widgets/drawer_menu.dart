@@ -1,13 +1,14 @@
-import 'dart:io';
-
 import 'package:app_demo/screens/screens.dart';
+
 class DrawerMenu extends StatelessWidget {
   const DrawerMenu({super.key});
-
-   @override
+  
+  @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+
     return Container(     
-      width: MediaQuery.of(context).size.width * 0.30,
+      width: MediaQuery.of(context).size.width * 0.35,
       child: Drawer(        
         child: Container(
           color: Colors.blueGrey[300],
@@ -21,8 +22,9 @@ class DrawerMenu extends StatelessWidget {
                   ),    
                 ),
                 child: Text(''),
-              ),
+              ),              
               ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                 title: const Text('Salir', style: TextStyle(color: Colors.white)),
                 trailing: const Icon(
                   Icons.logout,
@@ -32,7 +34,22 @@ class DrawerMenu extends StatelessWidget {
                   exit(0);           
                 },
               ),
-              // Add more ListTiles for other menu items
+              ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),         
+                title:const Text('Modo', style: TextStyle(color: Colors.white)),
+                trailing: Switch(
+                  value: themeProvider.temaActual == DefaultTheme.darkTheme,
+                  onChanged: (value) {
+                    if (value) {
+                      themeProvider.setDark();
+                    } else {
+                      themeProvider.setLight();
+                    }
+                  },
+                  activeColor: Colors.white,
+                  inactiveTrackColor: Colors.white30,
+                ),
+              ),
             ],
           ),
         ),

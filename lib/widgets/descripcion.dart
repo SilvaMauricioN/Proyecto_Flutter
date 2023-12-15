@@ -32,7 +32,6 @@ class Descripcion extends StatelessWidget {
                 Text(
                   agregarSaltoDeLinea(description),
                   style: const TextStyle(
-                    fontSize: 17,
                     fontWeight: FontWeight.w500,
                     height: 1.5,
                   ),
